@@ -1,0 +1,115 @@
+html {
+    background-image: url(../img/bats.gif);
+    background-position: 100% center;
+    background-repeat: repeat;
+}
+
+body {
+    font-family: arial, helcetica, sans-serif;
+}
+
+#box {
+    width: 800px;
+    background-color: white;
+    box-shadow: 0px 12px 15px 8px black;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin: auto;
+}
+
+#box1 {
+    height: 100px;
+    background-color: orange black;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin: auto;
+    background: -webit-gradient(
+        liner, center top, right bottom,
+        color-stop( white), color-stop(75%, orange),
+        color-stop(100%, black)
+        );
+    background: -moz-linear-gradient(
+        top left, white, orange 75%, black 100%
+        );
+    background: linear-gradient(
+        45deg, white, orange 75%, black 100%
+        );
+}
+
+#box2 {
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin: auto;
+}
+#box3 {
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin: auto;
+    background: -webit-gradient(
+        liner, center top, right bottom,
+        color-stop(black), color-stop(25%, orange),
+        color-stop(100%, white)
+        );
+    background: -moz-linear-gradient(
+        top left, black, orange 25%, white 100%
+        );
+    background: linear-gradient(
+        45deg,  black, orange 25%, white 100%
+        );
+}
+section {
+    width: 750px;
+    background-color: white;
+    margin: auto;
+}
+
+.floated {
+    float: left;
+    text-align: right;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.ShadowTitle {
+    /*text-shadow: -2px 2px 4px black;*/
+    /*color: orange;*/
+    font-size: 230%;
+    /*font-style: italic;*/
+    margin: 0px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+h3 {
+    margin: 0px;
+}
+
+h1 em {
+    font-size: 50px;
+    font-style: normal;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+li a {
+    color: orange;
+    font-weight: bold;
+}
+
+li a:hover{
+    color: green;
+}
+
+footer {
+    text-align: center;
+}

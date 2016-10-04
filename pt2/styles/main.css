@@ -1,0 +1,39 @@
+body {
+    font-family: arial, helcetica, sans-serif;
+}
+
+.floated {
+    float: left;
+    text-align: right;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.ShadowTitle {
+    text-shadow: -2px 2px 4px black;
+    color: orange;
+    font-size: 250%;
+    font-style: italic;
+}
+
+h1 em {
+    font-size: 50px;
+    font-style: normal;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+li a {
+    color: orange;
+    font-weight: bold;
+}
+
+li a:hover{
+    color: green;
+}
+
+footer {
+    text-align: center;
+}
