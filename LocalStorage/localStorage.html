@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Twitter Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="FavoriteTwitterSearches.js"></script>
+</head>
+
+<body>
+    <h1>Favorite Twitter Searches</h1>
+    <p id="welcomeMessage"> </p>
+    <form action="#">
+        <p><input id="query" type="text" placeholder="Entery Twitter search query">
+            <a href="https://dev.twitter.com/docs/using-search">
+                    Twitter search operators</a></p>
+        <p>
+            <input id="tag" type="text" placeholder="Tag your query">
+            <input type="button" value="Save" id="saveButton">
+            <input type="button" value="Clear All Saved Searches" id="clearButton"></p>
+    </form>
+    <h1>Previously Tagged Searches</h1>
+    <div id="searches"> </div>
+</body>
+
+</html>
