@@ -45,7 +45,7 @@ var generateSimpleGame = function() {
         $("cell" + 11).firstChild.nodeValue = null;
         numOfEmptyItem = 11;
     }
-}
+};
 
 function swapToEmptyItem(numOfArray) {
     // click one item near the empty item, and swap it to the empty item
@@ -53,7 +53,7 @@ function swapToEmptyItem(numOfArray) {
         (numOfArray - 4) == numOfEmptyItem || (numOfArray + 4) == numOfEmptyItem) {
         $("cell" + numOfEmptyItem).firstChild.nodeValue =
             $("cell" + numOfArray).firstChild.nodeValue;
-        $("cell" + numOfArray).firstChild.nodeValue = null;
+        $("cell" + numOfArray).firstChild.nodeValue = " ";
         numOfEmptyItem = numOfArray;
 
         // calculate the Moves
@@ -104,10 +104,13 @@ var start = function() {
     $("simpleGame").addEventListener("click", simple_game);
     for (var i = 0; i < 16; ++i) {
         // there needs an function to pass i to num
+        // $("cell" + i).setAttribute("onclick", "swapToEmptyItem("+ i +")" );
+        
+        // Method 2
         $("cell" + i).addEventListener("click", (function(num) {
             return function() {
                 swapToEmptyItem(num);
-            }
+            };
         })(i));
     }
 };
@@ -131,10 +134,9 @@ var simple_game = function() {
         $("cell" + i).addEventListener("click", (function(num) {
             return function() {
                 swapToEmptyItem(num);
-            }
+            };
         })(i));
     }
-
-}
+};
 
 window.addEventListener("load", start);
