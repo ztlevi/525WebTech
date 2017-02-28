@@ -105,7 +105,7 @@ var start = function() {
     for (var i = 0; i < 16; ++i) {
         // there needs an function to pass i to num
         // $("cell" + i).setAttribute("onclick", "swapToEmptyItem("+ i +")" );
-        
+
         // Method 2
         $("cell" + i).addEventListener("click", (function(num) {
             return function() {

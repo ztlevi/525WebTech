@@ -1,7 +1,6 @@
 @import 'normalize.css'
 
 html {
-    background-image: url(../img/bats.gif);
     background-position: 100% center;
     background-repeat: repeat;
 }
